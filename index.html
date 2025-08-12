@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>ForeverStore</title>
+</head>
+<script src="script.js"></script>
+
+<body>
+    <header id="main_header">
+        <div class="logo">
+            <div class="logo_icon">FS</div>
+            <div class="logo_text">
+                <span class="logo_main">Forever</span><span class="logo_sub">Store</span>
+                <div class="tagline">Ігри, знижки та спільнота</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search">
+                <input id="searchInput" type="text" placeholder="Пошук: назва..." />
+            </div>
+
+            <select id="genreFilter">
+                <option>Усі жанри</option>
+                <option>Action</option>
+                <option>RPG</option>
+                <option>Survival</option>
+                <option>Simulation</option>
+                <option>Horror</option>
+                <option>Racing</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <h1>Популярні ігри</h1>
+        <p style="font-weight: 50; padding-bottom: 40px;">Велика вітрина схожа на Steam – збільшений масштаб, зручні картки та акцент на візуал.</p>
+        <section class="card_div">
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com//store_item_assets/steam/apps/284160/capsule_616x353.jpg?t=1743607220">
+                  <div class="ribbon">Simulation</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">BeamNG.drive</h3>
+                    <div class="meta">Simulation - Реалістичного водіння <br/> з фізикою ушкоджень.</div>
+                    <div class="desc">BeamNG.drive — неймовірно <br/> реалістичний автосимулятор з практично <br/> безмежними можливостями.</div>
+                    <div class="price">515₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://clan.fastly.steamstatic.com/images/37002678/6eacbed1040b32acdd7ce6353d329aa2bbd937b1_400x225.png">
+                  <div class="ribbon">Horror</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Phasmophobia</h3>
+                    <div class="meta">Horror — гра, де кожен шурхіт <br/> може бути останнім, а вихід <br/> — лише ілюзія безпеки.</div>
+                    <div class="desc">Phasmophobia — страшно реалістичний хорор <br/> про полювання на привидів, <br/> де кожен звук зводить з розуму від страху</div>
+                    <div class="price">311₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242760/header.jpg?t=1699381053" width="390">
+                  <div class="ribbon">Action</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">The Forest</h3>
+                    <div class="meta">Action – кривава боротьба за життя у світі, <br/> де кожен день – це полювання. Ти видобуток. <br/> До першої сокири в черепі канібалу.</div>
+                    <div class="desc">The Forest – тут ти не герой, а загнаний звір. <br/> Біжи, лад, убивай… або згинь у пащі мутантів.</div>
+                    <div class="price">279₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/bc1dbc616ec607e9ea6be88a4698c8b94b895c98/header_alt_assets_8.jpg?t=1753355628" width="390">
+                  <div class="ribbon">RPG</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Cyberpunk 2077</h3>
+                    <div class="meta">RPG — поринь у неоновий кошмар Найт-Сіті, <br/> де кожен твій вибір змінює долі, <br/> а прокачування перетворює тебе на кіберлегенду <br/> або криваву смітник.</div>
+                    <div class="desc">Cyberpunk 2077 - тут ти не герой, <br/> а жива гармата з чіпом хаосу в голові.</div>
+                    <div class="price">489₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1746471508" width="390">
+                  <div class="ribbon">Racing</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Forza Horizon 5</h3>
+                    <div class="meta">Racing — адреналіновий чад, де асфальт <br/> палить шини, а горизонт кличе <br/> на шалені гонки крізь джунглі, пустелі та вулкани.</div>
+                    <div class="desc">Forza Horizon 5 – це не просто гонки, <br/> а карнавал швидкості у серці Мексики.</div>
+                    <div class="price">1199₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1753974947" width="390">
+                  <div class="ribbon">RPG</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Grand Theft Auto V</h3>
+                    <div class="meta">RPG — три герої, три стилії життя. Прокачуй <br/>  навички, роби вибір  — і стань королем злочинів.</div>
+                    <div class="desc">GTA 5 – це не просто відкритий світ, <br/> а божевільний калейдоскоп злочинів.</div>
+                    <div class="price">1349₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1751944840" width="390">
+                  <div class="ribbon">Survival</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Subnautica</h3>
+                    <div class="meta">Survival — Subnautica боротьба за життя у безодні, <br/> де кожен вдих може бути останнім.</div>
+                    <div class="desc">Subnautica — виживай у безодні, де темрява шепоче, <br/> а кожна істота хоче тебе зʼїсти.</div>
+                    <div class="price">799₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856" width="390">
+                  <div class="ribbon">Horror</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Sons Of The Forest</h3>
+                    <div class="meta">Horror — це коли Sons of the Forest змушує <br/> тебе вірити в те, чого немає... <br/> поки воно не з'являється.</div>
+                    <div class="desc">Sons of the Forest — це не виживання, а екстремальний <br/> відпочинок у лісу, де ти — головний курйоз <br/> для місцевих мутантів.</div>
+                    <div class="price">600₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3017860/683c16974b4c85649b4213d72ed22209f5a45e7b/header_alt_assets_0.jpg?t=1754593167" width="390">
+                  <div class="ribbon">Action</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">DOOM: The Dark Ages</h3>
+                    <div class="meta">Action — це коли DOOM: The Dark Ages бере твій <br/> страх перед темрявою... і розриває його вдрузіе <br/> в стилі "середньовічний ренесанс плюс плазма</div>
+                    <div class="desc">DOOM: The Dark Ages – це безумний сплав <br/> середньовічних битв і класичного DOOM-екшену.</div>
+                    <div class="price">1836₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236390/2138d08fc22dbf6a20ebff4cfa4632b359de8daf/header.jpg?t=1753375859" width="390">
+                  <div class="ribbon">Simulation</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">War Thunder</h3>
+                    <div class="meta">Simulation – War Thunder повне занурення у світ <br/> військової техніки та епічних битв!</div>
+                    <div class="desc">War Thunder — залізний пекельний млин, де танки, <br/> літаки та крейсери рвуть реальність у клочтя!</div>
+                    <div class="price">Безкоштовно</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/805550/header.jpg?t=1740392896" width="390">
+                  <div class="ribbon">Racing</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Assetto Corsa Competizione</h3>
+                    <div class="meta">Racing — Assetto Corsa Competizione <br/> чиста кров GT3, де асфальт палає, <br/> а твої нерви — ні.</div>
+                    <div class="desc">Assetto Corsa Competizione — це найточніший <br/> симулятор GT3-гонок, де кожен поворот, <br/> кожен грам ваги та кожна <br/> тисячна секунди мають значення.</div>
+                    <div class="price">999₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ribbon_div">
+                  <img class="cover" src="https://clan.fastly.steamstatic.com/images/11814497/b4112c0f4d1376af9bbe282f138324fc88236dc2_400x225.jpg" width="390">
+                  <div class="ribbon">Survival</div>
+                </div>
+                <div class="info">
+                    <h3 class="title">Dead by Daylight</h3>
+                    <div class="meta">Survival — Dead by Daylight: Жорстокий театр <br/> жахів, де виживання — це лише ілюзія.</div>
+                    <div class="desc">Dead by Daylight – жах на межі життя та смерті, <br/> де кожен матч – це індивідуальний кошмар.</div>
+                    <div class="price">171₴</div>
+                    
+                    <div class="action">
+                        <button class="buy_button">Купити</button>
+                        <button class="wish_button">У вибране</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div id="modal" class="modal-hidden">
+            <div class="modal-content">
+                <p id="modal-text"></p>
+                <p id="modal-price" style="margin-top: 12px; font-weight: 700; font-size: 20px;"></p>
+
+                <div class="modal-buttons">
+                    <button id="confirmBtn" class="buy_button">Підтвердити</button>
+                    <button id="cancelBtn" class="wish_button">Скасувати</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_div">
+            <h3>Невелика демо версія стима</h3>
+            <div class="desc">Зроблено с душою</div>
+            <div class="desc">© 2025 Forever Corporation. Всі права збережені. Усі торгові марки є власністю правовласників у США та інших країнах. НДС включено в усі ціни, де вони застосовні</div>
+        </div>
+    </footer>
+</body>
+</html>
